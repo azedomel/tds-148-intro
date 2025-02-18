@@ -22,10 +22,11 @@ let = nome, sobrenome
 nome = "kev"
 sobrenome = "santos"
 
+console.log("Meu nome é "+ nome + " " + sobrenome)
 console.log(`Meu nome é ${nome} ${sobrenome}.`)
 
 // Coloque a seguinte frase em uma variavel: It´s time
-let = "It's time"
+var frase = "It's time"
 
 // verifique o tipo de todas as variaveis criadas
-
+console.log(typeof idade, typeof comidaFavorita, typeof semNada)

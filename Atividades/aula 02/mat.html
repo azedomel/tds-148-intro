@@ -3,15 +3,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matemática</title>
+    <link rel="stylesheet" href="mat.css">
+
 </head>
-<style>
-    *{
-        padding: 0;
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        
-    }
-</style>
+
 <body>
     <h1>Contas matemáticas</h1>
 
@@ -63,46 +58,6 @@
         <p>Resultado: <span id="resDiv"></span></p>
 
 </section>
-
-    <script>
-        function somar(){
-            var numero1 = parseFloat(document.getElementById("n1").value)
-            var numero2 = parseFloat(document.getElementById("n2").value)
-            var res = document.getElementById("res")
-            res.innerHTML = numero1 + numero2
-            return res
-        }
-    </script>
-
-    <script>
-        function subtracao(){
-            var numero1 = parseFloat(document.getElementById("n3").value)
-            var numero2 = parseFloat(document.getElementById("n4").value)
-            var res = document.getElementById("resSub")
-            res.innerHTML = numero1 - numero2
-            return resSub
-        }
-    </script>
-
-    <script>
-        function mult(){
-            var numero1 = parseFloat(document.getElementById("n5").value)
-            var numero2 = parseFloat(document.getElementById("n6").value)
-            var res = document.getElementById("resMult")
-            res.innerHTML = numero1 * numero2
-            return resMult
-        }
-    </script>
-
-    <script>
-        function div(){
-            var numero1 = parseFloat(document.getElementById("n7").value)
-            var numero2 = parseFloat(document.getElementById("n8").value)
-            var res = document.getElementById("resDiv")
-            res.innerHTML = numero1 / numero2
-            return resDiv
-        }
-    </script>
     
 </body>
 </html>

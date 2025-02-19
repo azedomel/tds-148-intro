@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,14 +12,13 @@
     <h1>Contas matemáticas</h1>
 
     <section
-    <b>
-    <h2>soma</h2></b>
+    <b><h2>soma</h2></b>
 
         <label for="n1">Primeiro número:</label><br>
         <input type="text" id="n1" placeholder="Digite o primeiro número"><br>
         <label for="n2">Segundo número:</label><br>
         <input type="text" id="n2" placeholder="Digite o segundo número"><br><br>
-        <button onclick="somar()">SOMAR</button><br>
+        <button onclick="soma()">SOMAR</button><br>
         <p>Resultado: <span id="res"></span></p>
     
 </section>
@@ -30,7 +30,7 @@
         <input type="text" id="n3" placeholder="Digite o primeiro número"><br>
         <label for="n4">Segundo número:</label><br>
         <input type="text" id="n4" placeholder="Digite o segundo número"><br><br>
-        <button onclick="subtracao()">SUBTRAIR</button><br>
+        <button onclick="sub()">SUBTRAIR</button><br>
         <p>Resultado: <span id="resSub"></span></p>
 
 </section>
@@ -58,6 +58,7 @@
         <p>Resultado: <span id="resDiv"></span></p>
 
 </section>
-    
+<script src="mat.js"></script>
+
 </body>
 </html>

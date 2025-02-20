@@ -50,12 +50,21 @@ function media(){
         msg.style.color = "red"
     }
 }
+
     function IMC(){
         var peso = parseFloat(document.getElementById("peso").value)
         var altura = parseFloat(document.getElementById("altura").value)
         var resPeso = document.getElementById("resPeso")
         var msgIMC = document.getElementById("msgIMC")
-        var res = (altura*altura) / peso  
+        var res = ((altura*altura) / peso).toFixed(2)
+        resPeso.innerHTML = res
+        res = parseFloat(res)
+
+        if(isNaN(peso) || isNaN(altura)){
+            resPeso.textContent = "Digite apenas números!"
+            document.getElementById("msgIMC").textContent = " "
+            return
+        }
 
         if(res >= 40.0){
             resPeso.textContent = res
@@ -77,9 +86,11 @@ function media(){
             resPeso.textContent = res
             msgIMC.textContent = "Normal"
         }
-        else{
+        else if(res <= 18.5){
             resPeso.textContent = res
             msgIMC.textContent = "Abaixo do normal"
+        }
+        else{
         }
     }
 
@@ -87,7 +98,16 @@ function media(){
         var ano = parseFloat(document.getElementById("ano").value)
         var resIdade = document.getElementById("resIdade")
         var msgIdade = document.getElementById("msgIdade")
-        var res = 2025 - ano
+        const thisYear = new Date().getFullYear();
+        console.log(thisYear)
+        var res = thisYear - ano
+        
+        
+        if(isNaN(ano)){
+            res.textContent = "Digite apenas números!"
+            res.style.color = "red"
+            return
+        }
 
     if(res >= 18){
         resIdade.textContent = res

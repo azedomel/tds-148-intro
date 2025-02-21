@@ -15,6 +15,8 @@ section{
 
 .navbar{
     background-color: rgb(255, 197, 241);
+    font-family: "Poppins", serif;
+    
 }
 
 #s1 {
@@ -34,7 +36,7 @@ section{
   }
 
   .S1-right{
-    width: 600px;
+    width: 400px;
   }
 
   .wrap-img{
@@ -60,11 +62,11 @@ section{
     font-family: "Poppins", serif;
   }
 
-  #h2{
-    
+  #s2{
+    background-image: url("./assets/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-  }
+}
 
   @media(width < 1000px){
     #s1 {

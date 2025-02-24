@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#s2{
+    background-color: rgb(4, 83, 4);
+    height: 100vh;
+    color: #ffffff;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.cartao {
+  background-color: rgb(255, 223, 181);
+  width: 300px;
+  height: 500px;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.cartao:hover {
+  background-color: #070083c1;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  transition: opacity 300ms ease-in-out;
+  opacity: 100%;
+}
+
+.cartao:hover .wrap-img-card img {
+  transform: scale(1.1); /* Adiciona um leve zoom na imagem ao passar o mouse */
+  transition: transform 0.2s ease; /* Transição suave para o zoom */
+}
+
+.wrap-img-card {
+    min-height: 100px;
+    max-height: 100px;
+}
+
+.wrap-info-card{
+    display: flex;
+    padding: 10px;
+    font-size: 16px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    max-height: 300px;
+}
+
+.cartao h3{
+  justify-content: flex-end;
+  align-items: center;
+  max-height:50px ;
+  min-height: 50px;
+}

@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("./assets/melody.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 4vh;
+    padding: 30px 40px;
+    color: #370521;
+}
+h1{
+    width: 50%;
+    text-align: center;
+    color: rgb(146, 72, 115);
+    background-color: #ffb9df;
+    border: 2px solid #ffaedb00;
+    border-radius: 40px;
+    border-bottom-left-radius: 70px;
+    border-top-right-radius: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+}
+
+section{
+    border: 2px solid black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    flex-direction: column;
+    gap: 1vh;
+    transition: all 250ms;
+    background-color: #fa99ced2;
+    border-radius: 20px;
+}
+section:hover{
+    transition: all 250ms;
+    background-color: rgba(255, 187, 252, 0.314);
+}

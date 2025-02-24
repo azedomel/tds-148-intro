@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url("../assets/fundo1.jpg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    color: rgb(213, 129, 255);
+    display: flex;
+    height: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.info{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    color: rgb(213, 129, 255);
+    display: flex;
+    height: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}

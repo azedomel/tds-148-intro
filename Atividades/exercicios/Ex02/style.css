@@ -3,34 +3,45 @@
     margin: 0;
 }
 
-body{
+body {
     background-image: url("../assets/fundo1.jpg");
-    background-position: 50%;
+    background-position-y: bottom; /*deixa o background na metade*/
     background-repeat: no-repeat;
-    background-size: cover;
+    height: 500px; /* Usa 100% da altura da tela */
+    width: 100%; /* Garante que ocupe toda a largura */
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column; /* Organiza os itens de forma vertical */
 }
 
-.titulo{
+.titulo {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 70px;
-    color: rgb(213, 129, 255);
+    color: rgb(255, 254, 255);
     display: flex;
-    height: 100px;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
 }
 
-.info{
+.info {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 70px;
-    color: rgb(213, 129, 255);
+    font-size: 40px;
+    color: rgb(156, 42, 213);
+    width: 100%;
     display: flex;
-    height: 100px;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center; /* Justifica o texto para melhor leitura */
 }

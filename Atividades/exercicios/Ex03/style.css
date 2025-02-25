@@ -16,10 +16,9 @@
 }
 
 .cartao {
-  background-color: rgb(255, 223, 181);
+  background-color: rgb(255, 236, 212);
   width: 300px;
   height: 500px;
-  border: 2px solid #ffffff;
   border-radius: 10px;
   padding: 10px;
   display: flex;

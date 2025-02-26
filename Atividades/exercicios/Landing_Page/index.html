@@ -3,23 +3,33 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Indian-Style Site</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<title>Indian-Style Site</title>
 
-        <!-- Link para o Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <style>
-            /* Seus estilos personalizados */
+            
+                @import url('https://fonts.cdnfonts.com/css/blockletter');
+
+    
             :root {
                 --dark-red: #ff5912;
                 --black: #ffffff;
                 --white: #000000;
                 --gray: #1f1f1f;
+                font-family: 'Blockletter', sans-serif;
             }
             body {
                 padding-top: 70px;
                 background-color: var(--white);
                 color: var(--gray);
-                font-family: Arial, sans-serif;
+                font-family: 'Blockletter', sans-serif;
+                                                
                 margin: 0;
                 padding: 0;
                 height: 100vh;
@@ -34,11 +44,16 @@
                 width: 100%;
                 background: var(--dark-red);
                 color: var(--white);
-                padding: 0;
+                min-height: 100px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                z-index: 1000;
+                z-index: 100;
+                letter-spacing: 4px;
+            }
+
+            .logo{
+                height: 60px;
             }
 
             .nav-bar {
@@ -49,7 +64,7 @@
                 height: 1%;
                 padding: 2px 0;
                 align-items: center;
-                gap: 20px;
+                gap: 0px;
                 flex-wrap: wrap;
                 transition: 0.4s;
             }
@@ -67,10 +82,7 @@
                 text-transform: uppercase;
             }
 
-            .logo{
-                height: 40px;
-                display: flex;
-            }
+            
 
             #s1 {
             position: relative;
@@ -88,18 +100,21 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            border-radius: 10px;
+            flex-direction: column;
             color: var(--black);
-            font-size: 50px;
-            text-shadow: 2px 4px 5px var(--gray);
-            box-shadow: 3px 2px 51px 10px var(--gray);
-            -webkit-box-shadow: 3px 2px 51px 10px rgba(0,0,0,0.75);
-            -moz-box-shadow: 3px 2px 35px 10px rgba(0,0,0,0.75);
+            font-size: 60px;
+            text-shadow: 10px var(--white);
+            transition: 250ms;
         }
 
+        #s1 h5:hover{
+            color: rgba(241, 241, 241, 0);
+            -webkit-text-stroke: 1px var(--black);
+        }
         #s1 p{
-            color: var(--dark-red);
+            color: var(--black);
             font-size: 20px;
+            letter-spacing: 2px;
         }
 
             .carousel {
@@ -118,6 +133,11 @@
                 height: 100vh;
                 object-fit: cover;
             }
+            .carousel-item iframe{
+                width: 100%;
+                height: 100vh;
+                object-fit: cover;
+            }
 
             #s2 .cartao{
             background-image: url(./s2.jpg);
@@ -130,34 +150,34 @@
             text-align: center;
             flex-direction: column;
             color: var(--black);
+            font-family: 'Blockletter', sans-serif;
             }
 
             #s2 .title{
-                font-size: 90px;
-                background-color: rgba(47, 47, 47, 0.605);
+                display: flex;
+                font-size: 80px;
                 padding: 10px; 
                 margin: 10px;
-                border-radius: 50px;
-                border-bottom-right-radius: 30px;
-                border-top-left-radius: 30px;
                 transition: 250ms linear;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                flex-direction: column;
             }
 
             #s2 .texto{
-                font-size: 20px;
-                padding: 10px; 
-                margin: 10px;
+                font-size: 22px;
+                width: 70%;
                 display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                flex-direction: column;
             }
 
             #s2 .title:hover{
-                background-color: var(--white);
-                opacity: 100%;  
-                color: #ff5912;
+                color: var(--dark-red);
+                transform: scale(1.01);
             }
 
             #s3{
@@ -203,8 +223,15 @@
         }
 
         .card-content h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
+            display: flex;
+                font-size: 80px;
+                padding: 10px; 
+                margin: 10px;
+                transition: 250ms linear;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                flex-direction: column;
         }
 
         .card-content p {
@@ -220,7 +247,7 @@
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
-            transition: background 0.3s;
+            transition: 0.3s linear;
         }
 
         .card-content .btn:hover {
@@ -239,9 +266,9 @@
                 <a class="navbar-brand" href="#"><img class="logo" src="./logo.png" alt="Logo"></a>
             </div>
             <nav class="nav-bar">
-                <a class="nav-link" href="#s1">Motocicletas</a>
+                <a class="nav-link" href="#s1">Recursos</a>
                 <a class="nav-link" href="#s2">Quem somos</a>
-                <a class="nav-link" href="#s3">Recursos</a>
+                <a class="nav-link" href="#motos">Motocicletas</a>
                 <a class="nav-link" href="#s4">Contatos</a>
             </nav>
         </header>
@@ -258,22 +285,22 @@
                     <div class="carousel-item active" data-bs-interval="10000">
                         <img src="./slide1.jpg" class="d-block w-100" alt="slide1">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
+                            <h5>Audácia</h5>
+                            <p>Desafie os limites, viva o som da liberdade.</p>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
-                        <img src="./slide2.jpg" class="d-block w-100" alt="slide2">
+                        <iframe id="slide2" width="560" height="315" src="https://www.youtube.com/embed/a878N4UmdDg?si=sJyQ-KLmO0VM5ZyZ?autoplay=1&muted=1" title="YouTube video player" frameborder="0" allow=" autoplay; fullscreen;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
+                            <h5>Conexão</h5>
+                            <p>A estrada é o seu palco. A moto, sua parceira.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="./slide3.jpg" class="d-block w-100" alt="slide3">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
+                            <h5>Rebeldia</h5>
+                            <p>Mais que uma motocicleta, é um estilo de vida.</p>
                         </div>
                     </div>
                 </div>
@@ -292,13 +319,14 @@
         <section id="s2">
         <section class="cartao">
             <h2 class="title">Quem somos</h2>
-            <p class="texto">A Harley-Davidson é muito mais do que uma fabricante de motocicletas — somos uma lenda sobre duas rodas. Desde 1903, criamos motos que representam liberdade, aventura e autenticidade, inspirando gerações de motociclistas ao redor do mundo.
-                <br>Nosso compromisso vai além da engenharia de alto desempenho; cultivamos uma comunidade global de apaixonados por estrada e estilo de vida. Cada modelo Harley-Davidson carrega consigo um legado de inovação, potência e design inconfundível, garantindo experiências únicas a cada viagem.
-                <br>Seja na cidade ou na estrada aberta, nossos motores rugem para aqueles que vivem sem limites. Aqui, não vendemos apenas motocicletas — oferecemos a verdadeira essência da liberdade.
+            <p class="texto">A Harley-Davidson é muito mais do que uma fabricante de motocicletas — somos uma lenda sobre duas rodas.<br>Desde 1903, criamos motos que representam liberdade, aventura e autenticidade, inspirando gerações de motociclistas ao redor do mundo.
+                Nosso compromisso vai além da engenharia de alto desempenho; <br>cultivamos uma comunidade global de apaixonados por estrada e estilo de vida. <br>Cada modelo Harley-Davidson carrega consigo um legado de inovação, potência e design inconfundível, garantindo experiências únicas a cada viagem.
+                <br><br>Seja na cidade ou na estrada aberta, nossos motores rugem para aqueles que vivem sem limites. Aqui, não vendemos apenas motocicletas — oferecemos a verdadeira essência da liberdade.
                 </p>
             </section>
         </section>
 
+        
         <!-- Container para os cards -->
 <section id="motos" class="container my-5">
     <h2 class="text-center mb-4">Motocicletas</h2>

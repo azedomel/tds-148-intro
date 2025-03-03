@@ -37,6 +37,7 @@ section{
     height: 100vh;
 }
 
+
 #s1 {
   background-image: url("./assets/s1paper.jpg");
   background-repeat: no-repeat;
@@ -275,7 +276,7 @@ footer img:hover{
 
   @media(width < 1000px){
     #s1 {
-        padding: 80px 20px opx 20px;
+        padding: 80px 20px 0px 20px;
       }
       .wrap-img{
         width: 300px;

@@ -155,6 +155,7 @@
             width: 100%;
             height: 100vh;
             object-fit: cover;
+            pointer-events: none;
         }
 
         #s2 {
@@ -239,7 +240,7 @@
             background-color: var(--gray);
             padding: 100px;
             display: flex;
-            width: 100%;
+            width: auto;
             height: 100vh;
             align-items: center;
             justify-content: center;
@@ -253,19 +254,25 @@
         #s3 .title {
             color: var(--dark-red);
             display: flex;
-            font-size: 70px;
-            margin: 10px;
-            transition: 200ms linear;
             align-items: center;
             justify-content: center;
             text-align: center;
             flex-direction: column;
+            width: 80vw;
+            font-size: 60px;
             text-shadow: var(--white);
         }
 
         #s3 .card {
-            width: 200px;
-            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+            flex-direction: column;
+            gap: 10px;
+            flex-wrap: wrap;
+            width: 250px;
+            height: 65vh;
             padding: 20px;
             margin: 10px;
             background: var(--black);
@@ -274,13 +281,7 @@
             overflow: hidden;
             text-align: center;
             transition: 0.3s;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            text-align: center;
-            flex-direction: column;
-            gap: 10px;
-            flex-wrap: wrap;
+            
         }
 
         #s3 .card:hover {
@@ -300,9 +301,8 @@
         }
 
         #s3 .img-motos {
-            width: auto;
-            min-height: 100px;
-            max-height: 100px;
+            width: 70%;
+            height: auto;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -356,7 +356,7 @@
 
         #s4 .formulario {
             width: 300px;
-            height: 300px;
+            height: auto;
             margin: auto;
             background-color: var(--dark-red);
             clip-path: polygon(25% 0%, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%, 0% 25%);
@@ -447,33 +447,33 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4ZGMuMXpmJw?autoplay=1&mute=1"
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4ZGMuMXpmJw?autoplay=1&mute=1&controls=0&disablekb=1&modestbranding=1&fs=1"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption">
                         <h5>Audácia</h5>
                         <p>Desafie os limites, viva o som da liberdade.</p>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
                     <iframe id="slide2" width="560" height="315"
-                        src="https://www.youtube.com/embed/a878N4UmdDg?autoplay=1&mute=1" title="YouTube video player"
+                        src="https://www.youtube.com/embed/a878N4UmdDg?autoplay=1&mute=1&controls=0&disablekb=1&modestbranding=1&fs=1" title="YouTube video player"
                         frameborder="0" allow=" autoplay; encrypted-media;"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption">
                         <h5>Conexão</h5>
                         <p>A estrada é o seu palco. A moto, sua parceira.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <iframe id="slide3" width="560" height="315"
-                        src="https://www.youtube.com/embed/c9DvUbl-wXo?autoplay=1&mute=1" title="YouTube video player"
+                        src="https://www.youtube.com/embed/c9DvUbl-wXo?autoplay=1&mute=1&controls=0&disablekb=1&modestbranding=1&fs=1" title="YouTube video player"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption">
                         <h5>Rebeldia</h5>
                         <p>Mais que uma motocicleta, é um estilo de vida.</p>
                     </div>
@@ -513,8 +513,8 @@
 
 
     <section id="s3">
+        <h2 class="title">Motocicletas</h2>
 
-        <div class="title s3"><h2 class="title">Motocicletas</h2></div>
         <div class="card">
             <h3 class="card-title">BREAKOUT</h3>
             <img class="img-motos" src="/Atividades/images/breakout.png" alt="breakout">

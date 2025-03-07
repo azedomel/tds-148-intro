@@ -304,24 +304,27 @@
 
         #s4 {
             border-top: 4px solid var(--black);
-            height: 90vh;
-            width: 100%;
+            min-height: 90vh;
+            width: auto;
             background-color: var(--white);
             display: flex;
             align-items: center;
-            justify-content: space-between;
             flex-direction: column;
-
+            justify-content: center;
+            padding: 100px;
         }
 
-        #s4 .img  img{
-            min-height: 100px;
-            padding: 100px;
-            gap: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
+        #s4 img.logo.footer{
+            width: 90px;
+            height: auto;
+            position: absolute;
+            left: 20px;
+        }
+        #s4 img{
+            padding: 2px;
+            position: relative;
+            width: 40px;
+            right: 80vh;
         }
 
 
@@ -330,10 +333,12 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
             letter-spacing: 1px;
             font-size: 15px;
-            margin-block: 190px;
-            width: auto;
+            position: absolute;
+
+            padding-top: 40%;
 
         }
 
@@ -342,15 +347,16 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
             letter-spacing: 1px;
-            font-size: 30px;
+            font-size: 40px;
             width: 90% auto;
         }
 
         #s4 .formulario {
             width: 300px;
             height: auto;
-            margin: auto;
+            margin: 40px;
             background-color: var(--dark-red);
             clip-path: polygon(25% 0%, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%, 0% 25%);
             display: flex;
@@ -541,15 +547,16 @@
     <footer id="s4">
         <div class="footer">
 
-            <a class="navbar-brand" href="#"><img class="logo footer" src="/Atividades/images/logofooter.png"
-                    alt="Logo"></a>
-            <a target="_blank" href="https://www.linkedin.com/company/harley-davidson-motor-company/"><img width="30px"
-                    height="auto" src="/Atividades/images/logolinkedin.png" alt="Linkedin"></a>
-            <a target="_blank" href="https://www.instagram.com/harleydavidsondobrasil/"><img width="30px" height="auto"
+            <a class="navbar-brand" href="#"><img class="logo footer" src="/Atividades/images/logofooter.png" 
+                    alt="Logo" ></a>
+            <a target="_blank" href="https://www.linkedin.com/company/harley-davidson-motor-company/"><img
+                     src="/Atividades/images/logolinkedin.png" alt="Linkedin"></a>
+            <a target="_blank" href="https://www.instagram.com/harleydavidsondobrasil/"><img
                     src="/Atividades/images/logoinstagram.png" alt="Instagram"></a>
-            <a target="_blank" href="https://www.harley-davidson.com/br/pt/index.html"><img width="30px" height="auto"
+            <a target="_blank" href="https://www.harley-davidson.com/br/pt/index.html"><img
                     src="/Atividades/images/harleylogo..png" alt="harley"></a>
-            <h5 class="h5">Atendimento ao Cliente</h5>
+        </div>
+                    <h5>Atendimento ao Cliente</h5>
             <div class="formulario">
                 <label for="nome">Nome</label>
                 <input type="text" placeholder="Digite seu nome" id="nome">

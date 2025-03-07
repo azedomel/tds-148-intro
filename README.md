@@ -46,11 +46,8 @@ Kevilin Marcondes
 
 resumo do video deyvin
 
-Hoje em dia, há uma busca incessante pelas vagas na tecnologia, e isso pode nos dizer muito sobre o estado atual dessa área. 
+Hoje em dia, a procura por vagas na área de tecnologia está mais intensa do que nunca, e isso revela bastante sobre o momento que o mercado está vivendo. Com tanta gente tentando entrar, o mercado acaba ficando saturado, o que traz alguns problemas. As empresas, muitas vezes, exigem mais do que estão dispostas a pagar, e muita gente acaba caindo em cursos e canais que parecem promissores, mas focam mais em marketing do que em ensinar de verdade. Isso cria uma ideia quase perfeita de sucesso na área, que nem sempre reflete a realidade.
 
-Essa procura excessiva causa um saturamento no mercado que trabalho, que traz malefícios como: vagas que exigem mais do que podem pagar, busca por conhecimento de canais/cursos que oferecem apenas marketing e não resultados, além de criar um modelo de sucesso praticamente ideal para essa área.
+Além disso, as grandes empresas, que já dominam o mercado, continuam investindo pesado em ferramentas e benefícios para segurar seus funcionários mais experientes. Isso dificulta ainda mais a vida de quem está começando, criando uma barreira injusta para os novos profissionais que querem aprender e crescer. No fim das contas, isso acaba gerando um ciclo de exclusão e desigualdade de oportunidades.
 
-Além disso, muitas empresas que dominam o mercado, se mantém criando ferramentas para garantir que seus funcionários experientes não saiam do barco. Isso impossibilita a chegada de novas pessoas que estão começando e querem aprender, se tornando um ciclo de exclusividade desigual.
-
-Atualmente, temos acesso aos conteúdos completos que qualquer coisa que quisermos, e depende apenas da nossa vontade ir atrás do conhecimento que cursos de puro marketing não oferecem ou apresentam de forma superficial sem aprofundamento devido. Essa prática autodidata divide os alunos que sabem aplicar seu conhecimento em prova e os que aprendem de forma superficial e sem pratica alguma.
-
+Apesar de termos acesso a muito conteúdo completo e gratuito hoje em dia, aprender de verdade exige disposição para fugir dos cursos que só vendem promessas. Essa busca por aprendizado autodidata acaba dividindo os estudantes: de um lado, os que realmente conseguem aplicar o que sabem na prática, e do outro, os que ficam presos em conceitos superficiais, sem conseguir avançar de verdade.

@@ -85,22 +85,10 @@
             text-transform: uppercase;
         }
 
-        .navbar-toggler-icon{
-            background-image: url(/Atividades/images/listicon.png);
-            background-size: cover;
-        }
-        .navbar-toggler{
-            height: auto;
-            position: absolute;
-            right: 20px;
-            top: 10px;
-            cursor: pointer;
+        .navbar.list {
             display: none;
-            flex-direction: column;
-            justify-content: space-between;
-            padding: 5px 0;
-        }
 
+        }
         #s1 {
             width: 100%;
             height: 100vh;
@@ -155,75 +143,37 @@
         }
 
         #s2 {
-    background-image: url(/Atividades/images/s2.jpg);
-    background-size: cover;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    color: var(--black);
-    font-family: 'Blockletter', sans-serif;
-    padding: 50px;
-    box-sizing: border-box;
-    gap: 10px;
-    flex-wrap: wrap;
+            background-image: url(/Atividades/images/s2.jpg);
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--black);
+            flex-wrap: wrap;
+            padding: 100px ;
 }
 
-#s2 .title {
-    font-size: 80px;
-    padding: 80px; 
-    transition: 250ms linear;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-   
-}
-
-#s2 .text1 {
-    padding: 10px;
-    font-size: 30px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    letter-spacing: 1px;
-    
-}
-
-#s2 .text2 {
-   
-    font-size: 20px;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    letter-spacing: 1px;
-    margin: 10px auto;
-}
-
-#s2 .text3 {
-    padding: 5px;
-    font-size: 27px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    letter-spacing: 1px;
-    margin: 10px auto;
-}
-
+        #s2 .title {
+                padding-top: 10%;
+                font-size: 70px; 
+                transition: 250ms linear;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+        }
         #s2 .title:hover {
             color: var(--dark-red);
             transform: scale(1.01);
         }
 
+        .cartao{
+            font-size: 20px;    
+        }
+      
 
         #s3 {
             background-color: var(--gray);
@@ -294,13 +244,14 @@
         }
 
         #s3 .img-motos {
-            width: 70%;
+            width: 50%;
             height: auto;
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: row;
+            
         }
+
 
         #s4 {
             border-top: 4px solid var(--black);
@@ -398,14 +349,46 @@
             border: 2px solid var(--white);
         }
 
-        @media(width < 1000px) {
-    .navbar-toggler {
-        display: flex;
+        @media(width < 664px) {
+            .navbar-toggler-icon {
+                background-image: url(https://www.svgrepo.com/show/8335/list.svg);
+                background-size: cover;
+                display: flex;
+            }
+            .navbar-toggler {
+                display: flex;
+                height: 30px;
+            width: 30px;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            z-index: 100;
+            }
+      
     }
-
+        @media(width < 600px) {
     #s2 {
-        padding: 10vh 0px;
+        
+        padding: 10%;
         height: auto;
+    }
+    #s2 .title{
+        font-size: 40px;
+        padding: 10%;
+        margin-top: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    #s2 .text1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        padding: 5%;
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
     }
 }
     </style>
@@ -419,7 +402,24 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
+
+              <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+                  <h5 class="text-white h4">Collapsed content</h5>
+                  <span class="text-muted">Toggleable via the navbar brand.</span>
+                </div>
+              </div>
+              <nav class="navbar list">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </div>
+              </nav>
         </div>
+
+        
+          
         <nav class="nav-bar">
             <a class="nav-link" href="#s1">Início</a>
             <a class="nav-link" href="#s2">Quem somos</a>
@@ -487,61 +487,57 @@
     </section>
 
     <section id="s2">
+        <h2 class="title">Quem somos</h2>
+
         <section class="cartao">
-            <h2 class="title">Quem somos</h2>
             <p class="text1">A Harley-Davidson é muito mais do que uma fabricante de motocicletas, somos uma lenda
                 sobre duas rodas.
-                <br>
-            <p class="text2">Desde 1903, criamos motos que representam liberdade, aventura e autenticidade,
+                <br>Desde 1903, criamos motos que representam liberdade, aventura e autenticidade,
                 inspirando gerações de motociclistas ao redor do mundo.
                 Nosso compromisso vai além da engenharia de alto desempenho; <br>cultivamos uma comunidade global de
                 apaixonados por estrada e estilo de vida. <br>Cada modelo Harley-Davidson carrega consigo um legado de
-                inovação, potência e design inconfundível, garantindo experiências únicas a cada viagem.</p>
-            <br>
-            <p class="text3">Seja na cidade ou na estrada aberta, nossos motores rugem para aqueles que vivem sem
-                limites.
-                Aqui, não vendemos apenas motocicletas — oferecemos a verdadeira essência da liberdade.</p>
+                inovação, potência e design inconfundível, garantindo experiências únicas a cada viagem.<br>
+                Seja na cidade ou na estrada aberta, nossos motores rugem para aqueles que vivem sem
+                limites. Aqui, não vendemos apenas motocicletas — oferecemos a verdadeira essência da liberdade.
             </p>
         </section>
     </section>
 
-
     <section id="s3">
-        <div>
             <h2 class="title">Motocicletas</h2>
-        </div>
-        <div class="card">
+
+        <section class="card">
             <h3 class="card-title">BREAKOUT</h3>
             <img class="img-motos" src="/Atividades/images/breakout.png" alt="breakout">
             <p class="card-text">A Breakout é uma cruiser moderna, com design arrojado, pneu traseiro largo e postura
                 agressiva. Equipado com motor Milwaukee-Eight®, oferece potência e aceleração, garantindo uma pilotagem
                 emocionante e um visual imponente, ideal para quem busca estilo e desempenho na estrada.</p>
-        </div>
+            </section>
 
-        <div class="card">
+        <section class="card">
             <h3 class="card-title">LOW RIDER</h3>
             <img class="img-motos" src="/Atividades/images/lowrider.png" alt="low rider">
             <p class="card-text">A Low Rider S é uma moto de alto desempenho com estilo agressivo, inspirada nas motos
                 personalizadas da Califórnia. Com guidão alto, assento confortável e motor Milwaukee-Eight® 117, oferece
                 muita potência e torque, sendo ideal para quem busca velocidade e personalidade.</p>
-        </div>
+        </section>
 
-        <div class="card">
+        <section class="card">
             <h3 class="card-title">HERITAGE CLASSIC</h3>
             <img class="img-motos" src="/Atividades/images/heritage1.png" alt="heritage">
             <p class="card-text">A Heritage Classic combina o visual clássico das estradeiras com tecnologia moderna e
                 conforto. Seu design vintage e alforjes rígidos preservam o estilo das rodovias. O motor
                 Milwaukee-Eight® garante potência e suavidade em longas viagens.</p>
-        </div>
+        </section>
 
-        <div class="card">
+        <section class="card">
             <h3 class="card-title">FAT BOY</h3>
             <img class="img-motos" src="/Atividades/images/fatboy.png" alt="fat boy">
             <p class="card-text">A Fat Boy é um ícone da Harley-Davidson, com visual imponente e rodas sólidas. Equipado
                 com motor Milwaukee-Eight®, combina força e confiança. Seu design robusto e acabamentos premium a tornam
                 ideal para quem busca se destacar nas estradas, entregando uma performance única e um visual marcante.
             </p>
-        </div>
+        </section>
     </section>
 
     <footer id="s4">

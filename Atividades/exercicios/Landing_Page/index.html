@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>Indian-Style Site</title>
 
@@ -17,8 +15,6 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
         @import url('https://fonts.cdnfonts.com/css/blockletter');
-
-
 
         :root {
             --dark-red: #ff5912;
@@ -30,7 +26,7 @@
 
         html,
         body {
-            height: 100%;
+            height: auto; /* Alterado para auto */
             margin: 0;
             padding: 0;
             font-family: 'Blockletter', sans-serif;
@@ -38,7 +34,7 @@
         }
 
         section {
-            height: 100vh;
+            height: auto; /* Alterado para auto para melhor responsividade */
             box-sizing: border-box;
         }
 
@@ -85,9 +81,21 @@
             text-transform: uppercase;
         }
 
-        .navbar.list {
-            display: none;
+        .navbar-toggler-icon {
+            background-image: url(/Atividades/images/listicon.png);
+            background-size: cover;
+        }
 
+        .navbar-toggler {
+            height: auto;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            cursor: pointer;
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 5px 0;
         }
         #s1 {
             width: 100%;
@@ -141,6 +149,7 @@
             object-fit: cover;
             pointer-events: none;
         }
+        
 
         #s2 {
             background-image: url(/Atividades/images/s2.jpg);
@@ -150,35 +159,69 @@
             align-items: center;
             justify-content: center;
             text-align: center;
+            flex-direction: column;
             color: var(--black);
+            font-family: 'Blockletter', sans-serif;
+            padding: 50px;
+            box-sizing: border-box;
+            gap: 10px;
             flex-wrap: wrap;
-            padding: 100px ;
-}
+        }
 
         #s2 .title {
-                padding-top: 10%;
-                font-size: 70px; 
-                transition: 250ms linear;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
+            font-size: 70px;
+            padding: 80px;
+            transition: 250ms linear;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
         }
+
+        #s2 .text1 {
+            padding: 10px;
+            font-size: 20px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            letter-spacing: 1px;
+        }
+
+        #s2 .text2 {
+            font-size: 16px;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            letter-spacing: 1px;
+            margin: 10px auto;
+        }
+
+        #s2 .text3 {
+            padding: 5px;
+            font-size: 17px;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            letter-spacing: 1px;
+            margin: 10px auto;
+        }
+
         #s2 .title:hover {
             color: var(--dark-red);
             transform: scale(1.01);
         }
 
-        .cartao{
-            font-size: 20px;    
-        }
-      
-
         #s3 {
             background-color: var(--gray);
             display: flex;
-            padding: 100px;
+            padding: 5px;
             width: auto;
             min-height: 100vh;
             align-items: center;
@@ -194,7 +237,6 @@
             color: var(--dark-red);
             display: flex;
             font-size: 70px;
-            margin: 10px;
             transition: 200ms linear;
             align-items: center;
             justify-content: center;
@@ -202,6 +244,7 @@
             flex-direction: column;
             margin: 10px;
             width: 80vw;
+            padding-top: 10%;
             font-size: 60px;
             text-shadow: var(--white);
         }
@@ -209,22 +252,21 @@
         #s3 .card {
             display: flex;
             align-items: center;
-            justify-content: space-around;
+            justify-content: space-between;
             text-align: center;
             flex-direction: column;
-            gap: 10px;
+            gap: 2px;
             flex-wrap: wrap;
-            width: 250px;
-            height: 65vh;
+            width: 200px;
+            height: auto;
             padding: 20px;
-            margin: 10px;
+            margin: 5px;
             background: var(--black);
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.867);
             overflow: hidden;
             text-align: center;
             transition: 0.3s;
-            
         }
 
         #s3 .card:hover {
@@ -240,18 +282,17 @@
         }
 
         #s3 .card-text:hover {
-            color: var(--black)
+            color: var(--black);
         }
 
         #s3 .img-motos {
-            width: 50%;
+            width: 70%;
             height: auto;
             display: flex;
             justify-content: center;
             align-items: center;
-            
+            flex-direction: row;
         }
-
 
         #s4 {
             border-top: 4px solid var(--black);
@@ -265,19 +306,19 @@
             padding: 100px;
         }
 
-        #s4 img.logo.footer{
+        #s4 img.logo.footer {
             width: 90px;
             height: auto;
             position: absolute;
             left: 20px;
         }
-        #s4 img{
+
+        #s4 img {
             padding: 2px;
             position: relative;
             width: 40px;
             right: 80vh;
         }
-
 
         #s4 p {
             color: var(--black);
@@ -288,9 +329,7 @@
             letter-spacing: 1px;
             font-size: 15px;
             position: absolute;
-
             padding-top: 40%;
-
         }
 
         #s4 h5 {
@@ -301,7 +340,7 @@
             flex-direction: column;
             letter-spacing: 1px;
             font-size: 40px;
-            width: 90% auto;
+            width: 90%;
         }
 
         #s4 .formulario {
@@ -316,7 +355,7 @@
             flex-direction: column;
             padding: 35px;
         }
-        
+
         .formulario button {
             padding: 10px;
             border-radius: 999px;
@@ -334,12 +373,10 @@
             background: var(--black);
         }
 
-
         .formulario label {
             text-align: left;
             width: 100%;
             margin-left: 40px;
-
         }
 
         .formulario input {
@@ -349,77 +386,109 @@
             border: 2px solid var(--white);
         }
 
-        @media(width < 664px) {
-            .navbar-toggler-icon {
-                background-image: url(https://www.svgrepo.com/show/8335/list.svg);
-                background-size: cover;
-                display: flex;
+        /* Media queries para responsividade */
+        @media (max-width: 1200px) {
+            #s1 h5 {
+                font-size: 50px;
             }
-            .navbar-toggler {
-                display: flex;
-                height: 30px;
-            width: 30px;
-            position: absolute;
-            right: 20px;
-            top: 10px;
-            z-index: 100;
+
+            #s2 .title {
+                font-size: 70px;
             }
-      
-    }
-        @media(width < 600px) {
-    #s2 {
-        
-        padding: 10%;
-        height: auto;
-    }
-    #s2 .title{
-        font-size: 40px;
-        padding: 10%;
-        margin-top: 10%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-    #s2 .text1{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        text-align: center;
-        padding: 5%;
-        font-size: 15px;
-        font-family: 'Poppins', sans-serif;
-    }
-}
+
+            #s3 .title {
+                font-size: 60px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            #s1 h5 {
+                font-size: 45px;
+            }
+
+            #s2 .title {
+                font-size: 65px;
+            }
+
+            #s3 .title {
+                font-size: 55px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            #s1 h5 {
+                font-size: 40px;
+            }
+
+            #s1 p {
+                font-size: 16px;
+            }
+
+            #s2 .title {
+                font-size: 60px;
+            }
+
+            #s2 .text1,
+            #s2 .text2,
+            #s2 .text3 {
+                font-size: 18px;
+            }
+
+            #s3 .title {
+                font-size: 50px;
+            }
+
+            #s4 .formulario {
+                width: 90%;
+            }
+
+            .formulario button {
+                padding: 8px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            #s1 h5 {
+                font-size: 35px;
+            }
+
+            #s2 .title {
+                font-size: 50px;
+            }
+
+            #s2 .text1,
+            #s2 .text2,
+            #s2 .text3 {
+                font-size: 16px;
+            }
+
+            #s3 .title {
+                font-size: 40px;
+            }
+
+            #s4 h5 {
+                font-size: 25px;
+            }
+
+            #s4 p {
+                font-size: 12px;
+            }
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
 </head>
-
 <body>
-
     <header>
         <div class="top-bar">
             <a class="navbar-brand" href="#"><img class="logo" src="/Atividades/images/logo.png" alt="Logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-
-              <div class="collapse" id="navbarToggleExternalContent">
-                <div class="bg-dark p-4">
-                  <h5 class="text-white h4">Collapsed content</h5>
-                  <span class="text-muted">Toggleable via the navbar brand.</span>
-                </div>
-              </div>
-              <nav class="navbar list">
-                <div class="container-fluid">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                </div>
-              </nav>
+            </button>
         </div>
-
-        
-          
         <nav class="nav-bar">
             <a class="nav-link" href="#s1">Início</a>
             <a class="nav-link" href="#s2">Quem somos</a>
@@ -429,7 +498,6 @@
     </header>
 
     <section id="s1">
-
         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
@@ -487,88 +555,81 @@
     </section>
 
     <section id="s2">
-        <h2 class="title">Quem somos</h2>
-
         <section class="cartao">
+            <h2 class="title">Quem somos</h2>
             <p class="text1">A Harley-Davidson é muito mais do que uma fabricante de motocicletas, somos uma lenda
                 sobre duas rodas.
-                <br>Desde 1903, criamos motos que representam liberdade, aventura e autenticidade,
+                <br>
+            <p class="text2">Desde 1903, criamos motos que representam liberdade, aventura e autenticidade,
                 inspirando gerações de motociclistas ao redor do mundo.
                 Nosso compromisso vai além da engenharia de alto desempenho; <br>cultivamos uma comunidade global de
                 apaixonados por estrada e estilo de vida. <br>Cada modelo Harley-Davidson carrega consigo um legado de
-                inovação, potência e design inconfundível, garantindo experiências únicas a cada viagem.<br>
-                Seja na cidade ou na estrada aberta, nossos motores rugem para aqueles que vivem sem
-                limites. Aqui, não vendemos apenas motocicletas — oferecemos a verdadeira essência da liberdade.
+                inovação, potência e design inconfundível, garantindo experiências únicas a cada viagem.</p>
+            <br>
+            <p class="text3">Seja na cidade ou na estrada aberta, nossos motores rugem para aqueles que vivem sem
+                limites.
+                Aqui, não vendemos apenas motocicletas — oferecemos a verdadeira essência da liberdade.</p>
             </p>
         </section>
     </section>
 
     <section id="s3">
+        <div>
             <h2 class="title">Motocicletas</h2>
-
-        <section class="card">
+        </div>
+        <div class="card" id="breakout">
             <h3 class="card-title">BREAKOUT</h3>
             <img class="img-motos" src="/Atividades/images/breakout.png" alt="breakout">
             <p class="card-text">A Breakout é uma cruiser moderna, com design arrojado, pneu traseiro largo e postura
                 agressiva. Equipado com motor Milwaukee-Eight®, oferece potência e aceleração, garantindo uma pilotagem
                 emocionante e um visual imponente, ideal para quem busca estilo e desempenho na estrada.</p>
-            </section>
+        </div>
 
-        <section class="card">
+        <div class="card" id="lowrider">
             <h3 class="card-title">LOW RIDER</h3>
             <img class="img-motos" src="/Atividades/images/lowrider.png" alt="low rider">
             <p class="card-text">A Low Rider S é uma moto de alto desempenho com estilo agressivo, inspirada nas motos
                 personalizadas da Califórnia. Com guidão alto, assento confortável e motor Milwaukee-Eight® 117, oferece
                 muita potência e torque, sendo ideal para quem busca velocidade e personalidade.</p>
-        </section>
+        </div>
 
-        <section class="card">
+        <div class="card" id="heritage">
             <h3 class="card-title">HERITAGE CLASSIC</h3>
             <img class="img-motos" src="/Atividades/images/heritage1.png" alt="heritage">
             <p class="card-text">A Heritage Classic combina o visual clássico das estradeiras com tecnologia moderna e
                 conforto. Seu design vintage e alforjes rígidos preservam o estilo das rodovias. O motor
                 Milwaukee-Eight® garante potência e suavidade em longas viagens.</p>
-        </section>
+        </div>
 
-        <section class="card">
+        <div class="card" id="fatboy">
             <h3 class="card-title">FAT BOY</h3>
             <img class="img-motos" src="/Atividades/images/fatboy.png" alt="fat boy">
             <p class="card-text">A Fat Boy é um ícone da Harley-Davidson, com visual imponente e rodas sólidas. Equipado
                 com motor Milwaukee-Eight®, combina força e confiança. Seu design robusto e acabamentos premium a tornam
                 ideal para quem busca se destacar nas estradas, entregando uma performance única e um visual marcante.
             </p>
-        </section>
+        </div>
     </section>
 
     <footer id="s4">
         <div class="footer">
-
-            <a class="navbar-brand" href="#"><img class="logo footer" src="/Atividades/images/logofooter.png" 
-                    alt="Logo" ></a>
+            <a class="navbar-brand" href="#"><img class="logo footer" src="/Atividades/images/logofooter.png"
+                    alt="Logo"></a>
             <a target="_blank" href="https://www.linkedin.com/company/harley-davidson-motor-company/"><img
-                     src="/Atividades/images/logolinkedin.png" alt="Linkedin"></a>
+                    src="/Atividades/images/logolinkedin.png" alt="Linkedin"></a>
             <a target="_blank" href="https://www.instagram.com/harleydavidsondobrasil/"><img
                     src="/Atividades/images/logoinstagram.png" alt="Instagram"></a>
             <a target="_blank" href="https://www.harley-davidson.com/br/pt/index.html"><img
                     src="/Atividades/images/harleylogo..png" alt="harley"></a>
         </div>
-                    <h5>Atendimento ao Cliente</h5>
-            <div class="formulario">
-                <label for="nome">Nome</label>
-                <input type="text" placeholder="Digite seu nome" id="nome">
-                <label for="assunto">Assunto</label>
-                <input type="text" placeholder="Digite o assunto" id="assunto">
-                <br>
-                <button onclick="enviar()">Enviar</button>
-            </div>
-
-
-            <p>Mapa do site
-                Termos de Uso |
-                Política de Privacidade |
-                Política de Cookies |
-                Gerenciar Preferências de Cookies |
-                Nós nos preocupamos com você</p>
+        <h5>Atendimento ao Cliente</h5>
+        <div class="formulario">
+            <label for="nome">Nome</label>
+            <input type="text" placeholder="Digite seu nome" id="nome">
+            <label for="assunto">Assunto</label>
+            <input type="text" placeholder="Digite o assunto" id="assunto">
+            <br>
+            <button onclick="enviar()">Enviar</button>
         </div>
     </footer>
 
@@ -597,5 +658,4 @@
         crossorigin="anonymous"></script>
 
 </body>
-
 </html>
